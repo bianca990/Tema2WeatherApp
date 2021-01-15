@@ -1,0 +1,94 @@
+.jfx-decorator {
+    -fx-border-width: 0;
+}
+
+.jfx-decorator-button {
+	-fx-background-color: TRANSPARENT;
+	-fx-background-radius: 0;
+	-fx-background-insets: 0;
+}
+
+.jfx-decorator-buttons-container {
+	-fx-padding: 0 0 4 0;
+}
+
+.resize-border {
+	-fx-border-width: 0;
+}
+
+.close-button:hover {
+	-fx-background-color: rgb(232, 17, 35);
+}
+
+* {
+   -fx-base-color: rgb(31.0, 31.0, 31.0);
+   -fx-red-color:  rgb(232.0, 17.0, 35.0);
+}
+
+#contentContainer {
+	-fx-background-color: rgba(100, 150, 150, 150);
+	-fx-padding: 10.0px;
+}
+
+#statusContainer,#bottomField{
+	-fx-padding: 3.0 5.0 3.0 5.0;
+	-fx-background-color: rgb(50.0, 90.0, 120.0);
+	-fx-alignment: CENTER_LEFT;
+	-fx-spacing: 10.0px;
+}
+
+#statusContainer FontIcon{
+	-fx-icon-size: 16.0px;
+	-fx-icon-color: WHITE;
+}
+
+
+.value, #city,#chooseTitle {
+    -fx-font-weight: bold;
+
+}
+
+.value-container {
+    -fx-margin: 5px;
+    -fx-font-size: 15px;
+}
+
+#city{
+    -fx-font-size: 23px;
+    -fx-border-color:rgb(50.0, 90.0, 120.0);
+    -fx-border-width:0 0 3 0;
+}
+#chooseTitle{
+    -fx-font-size: 15px;
+    -fx-border-color:transparent transparent rgb(50.0, 90.0, 120.0) transparent;
+     -fx-border-width: 0 0 3 0;
+    -fx-padding:5px 40px;
+}
+#vbox1{
+    -fx-padding:0 40 5 5;
+    -fx-border-color:transparent rgb(50.0, 90.0, 120.0) transparent transparent;
+}
+#vbox2{
+    -fx-border-color:transparent transparent transparent rgb(50.0, 90.0, 120.0);
+    -fx-padding:0 0 5 30;
+}
+#vbox3{
+    -fx-font-weight:bold;
+    -fx-padding:10px 0 10px 20px ;
+     -fx-font-size:13px;
+}
+#vbox3 Label{
+    -fx-padding:5px 0 0 0 ;
+
+}
+
+#weatherIcon{
+    -fx-padding:10px 20px;
+    -fx-min-height: 40px;
+
+        -fx-min-width: 40px;
+}
+
+#temperature{
+    -fx-font-size: 30px;
+}

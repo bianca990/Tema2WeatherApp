@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainPane" prefHeight="240.0" prefWidth="420.0"
+           xmlns="http://javafx.com/javafx/8.0.121" fx:controller="ro.mta.se.lab.controllers.WeatherViewController">
+    <BorderPane>
+        <top>
+            <HBox id="statusContainer" prefHeight="25.0" prefWidth="439.0" alignment="BASELINE_RIGHT">
+                <Button fx:id="helpButton" prefHeight="10.0" prefWidth="10.0">
+                </Button>
+            </HBox>
+        </top>
+        <center>
+            <VBox id="contentContainer">
+                <BorderPane prefWidth="420.0">
+                    <top>
+                        <VBox alignment="CENTER">
+                            <Label fx:id="chooseTitle" prefHeight="40" alignment="CENTER_RIGHT">
+                                <font>
+                                    <Font name="System Bold"/>
+                                </font>
+                                Choose location for current weather:
+                            </Label>
+                            <Label></Label>
+                        </VBox>
+                    </top>
+                    <left>
+                        <HBox style="-fx-padding:50 40 10 40">
+                            <VBox fx:id="vbox1">
+                                <Label prefHeight="30" styleClass="value">Select Country:</Label>
+                                <ComboBox prefWidth="150" fx:id="countrySource"/>
+                            </VBox>
+                            <VBox fx:id="vbox2">
+                                <Label prefHeight="30" styleClass="value">Select City:</Label>
+                                <ComboBox prefWidth="150" fx:id="citySource"/>
+                            </VBox>
+                        </HBox>
+                    </left>
+                    <bottom>
+                        <VBox  prefHeight="40"></VBox>
+                    </bottom>
+                </BorderPane>
+                <BorderPane prefHeight="108.0" prefWidth="420.0" style="-fx-padding:10 40" >
+                    <top>
+                        <VBox style="-fx-padding:0 0 0 20px;">
+                            <Label fx:id="city"></Label>
+                        </VBox>
+                    </top>
+                    <left>
+                        <HBox alignment="CENTER_LEFT" fx:id="vbox3">
+                            <VBox prefHeight="74.0" prefWidth="210.0">
+                                <Label fx:id="updateTime"/>
+                                <Label fx:id="description"/>
+                                <HBox>
+                                    <ImageView fx:id="weatherIcon"/>
+                                    <Label fx:id="temperature" prefHeight="30"/>
+                                </HBox>
+                            </VBox>
+                            <VBox prefHeight="74.0" prefWidth="130.0">
+                                <Label fx:id="pressure"/>
+                                <Label fx:id="humidity"/>
+                                <Label fx:id="wind"/>
+                            </VBox>
+                        </HBox>
+                    </left>
+                    <right>
+                    </right>
+                </BorderPane>
+            </VBox>
+        </center>
+        <bottom>
+            <HBox fx:id="bottomField">
+                <Label>@ATM</Label>
+            </HBox>
+        </bottom>
+    </BorderPane>
+</StackPane>

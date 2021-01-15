@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane minHeight="200.0" minWidth="250.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:id="dialog">
+    <HBox style="-fx-padding:0 10">
+        <VBox alignment="CENTER">
+            <Label>Help</Label>
+            <Label/>
+            <Label/>
+            <Label>Weather data info:</Label>
+            <Label>Now you can access current weather data!!</Label>
+            <Label/>
+            <Label>Select your country code than select your city and
+            </Label>
+            <Label>you will get the current weather from</Label>
+            <Label text="OpenWeatherMap">
+                <font>
+                    <Font name="System Bold"/>
+                </font>
+            </Label>
+            <Label/>
+            <Button fx:id="closeButton" text="OK"/>
+        </VBox>
+    </HBox>
+</AnchorPane>
